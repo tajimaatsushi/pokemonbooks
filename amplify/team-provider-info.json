@@ -1,0 +1,23 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-pokemonbooks-dev-00033-authRole",
+            "UnauthRoleArn": "arn:aws:iam::176120833467:role/amplify-pokemonbooks-dev-00033-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::176120833467:role/amplify-pokemonbooks-dev-00033-authRole",
+            "Region": "ap-northeast-1",
+            "DeploymentBucketName": "amplify-pokemonbooks-dev-00033-deployment",
+            "UnauthRoleName": "amplify-pokemonbooks-dev-00033-unauthRole",
+            "StackName": "amplify-pokemonbooks-dev-00033",
+            "StackId": "arn:aws:cloudformation:ap-northeast-1:176120833467:stack/amplify-pokemonbooks-dev-00033/3739ceb0-cb11-11eb-a81f-06a811ba9fb3",
+            "AmplifyAppId": "d2e0w45mk2r21t"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d2e0w45mk2r21t",
+                    "type": "manual"
+                }
+            }
+        }
+    }
+}

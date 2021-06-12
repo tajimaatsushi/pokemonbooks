@@ -1,0 +1,15 @@
+<div class="search">
+    <mat-form-field appearance="fill">
+        <mat-label>ポケモン検索</mat-label>
+        <input matInput [(ngModel)]="searchpokemon.name">
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="Search()">検索</button>
+    <span>   </span>
+    <button mat-raised-button color="secondary" (click)="openDialog()">詳細検索</button>
+</div>
+<div class="grid">
+    <mat-card *ngFor="let pokemon of pokemons" routerLink="/{{ pokemon.id }}">
+        <img src="/assets/thumbnails/{{ pokemon.id | number:'3.0'}}.png" alt="">
+        <p>{{ pokemon.name.japanese }}</p>
+    </mat-card>
+</div>

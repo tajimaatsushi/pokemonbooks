@@ -1,0 +1,65 @@
+<!-- <h1 mat-dialog-title>Hi {{data.name}}</h1> -->
+<div mat-dialog-content>
+<table>
+    <tr>
+        <td>
+            <mat-form-field appearance="fill">
+                <mat-label>名前</mat-label>
+                <input matInput [(ngModel)]="searchpokemon.name">
+            </mat-form-field>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <mat-form-field appearance="fill">
+                <mat-label>体力<span>　※以上</span></mat-label>
+                <input matInput [(ngModel)]="searchpokemon.HP">
+            </mat-form-field>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <mat-form-field appearance="fill">
+                <mat-label>攻撃<span>　※以上</span></mat-label>
+                <input matInput [(ngModel)]="searchpokemon.Attack">
+            </mat-form-field>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <mat-form-field appearance="fill">
+                <mat-label>防御<span>　※以上</span></mat-label>
+                <input matInput [(ngModel)]="searchpokemon.Defense">
+            </mat-form-field>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <mat-form-field appearance="fill">
+                <mat-label>特攻<span>　※以上</span></mat-label>
+                <input matInput [(ngModel)]="searchpokemon.SpAttack">
+            </mat-form-field>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <mat-form-field appearance="fill">
+                <mat-label>特防<span>　※以上</span></mat-label>
+                <input matInput [(ngModel)]="searchpokemon.SpDefense">
+            </mat-form-field>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <mat-form-field appearance="fill">
+                <mat-label>速度<span>　※以上</span></mat-label>
+                <input matInput [(ngModel)]="searchpokemon.Speed">
+            </mat-form-field>
+        </td>
+    </tr>
+</table>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onOK()" color="primary">OK</button>
+    <button mat-button (click)="onClose()">閉じる</button>
+  </div>
